@@ -34,11 +34,6 @@ body, html{
   height: 10%;
   margin: 0;
   padding: 0;
-
-  -webkit-box-shadow: 0 8px 6px -6px #666;
-  -moz-box-shadow: 0 8px 6px -6px #666;
-  box-shadow: 0 8px 6px -6px #666;
-
 }
 
 .title{
@@ -62,35 +57,32 @@ body, html{
 
 .card {
   background-color: #FFF;
-  width: 100%;
-  height: 80%;
-  margin:0;
-  z-index: -1;
-  text-align: center;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: 1px;
-  border-color: #aaa;
-  overflow: auto;
-  display: table;
-
   background: -webkit-linear-gradient(left, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Safari */
   background: -o-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #E0E0E0 , #FFFFFF, #E0E0E0); /* Standard syntax */
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+
+  width: 100%;
+  height: 80%;
+  margin:0;
+  text-align: center;
+  overflow: auto;
 }
 
 .term p{
-  display:table-cell;
   vertical-align:middle;
   font-size: 5rem;
 }
 
 .definition p{
-  display:table-cell;
   vertical-align:middle;
   font-size:2rem;
   padding:0 30px;
+  height:100%;
 }
 
 .controls{
@@ -133,12 +125,10 @@ a{
 
 .confirm a{
   display: inline-block;
-  height: 30px;
-  padding: 5px 50px 0 50px;
-  margin: 20px 60px;
-  background: #B8E4F0;
-  border: 2px solid #3779AC;
-  border-radius: 5px;
+  height: 100%;
+  width:50%;
+  padding: 1% 0 0 0;
+  margin: 0;
   text-align: center;
   font-size: 1.5rem;
   color: #3779AC;
@@ -146,10 +136,12 @@ a{
 
 .known{
   float: left;
+  background: rgba(255, 255, 255, .7)
 }
 
 .unknown{
   float: right;
+  background: rgba(0, 0, 0, .7)
 }
 
 /* thanks to http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
@@ -161,6 +153,7 @@ and (max-width : 320px) {
   }
 
   .card{
+    height:336px;
   }
 
   .controls{

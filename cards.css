@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.flashCards {
+  background: -webkit-linear-gradient(top, #c0c0c0, #ffffff);
+  background: -moz-linear-gradient(top, #c0c0c0, #ffffff);
+  background: -ms-linear-gradient(top, #c0c0c0, #ffffff);
+  background: -o-linear-gradient(top, #c0c0c0, #ffffff);
+  background-repeat: no-repeat;
+  font-family: Georgia, serif;
+  font-style:italic;
+}
+
+.container{
+  width:80vw;
+  height:90vh;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #2691a3;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-shadow: 0 8px 6px -6px #666;
+  -moz-box-shadow: 0 8px 6px -6px #666;
+  box-shadow: 0 8px 6px -6px #666;
+
+}
+
+.title{
+  background-color: #4c4c4c;
+  color: #FFF;
+  width: 10%;
+  height: 100%;
+  font-size: 5rem;
+  display: inline-block;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  
+  border-left: 30px solid white;
+  margin: 7px auto 0 auto;
+}
+
+.card {
+  background-color: #FFF;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  z-index: -1;
+  text-align: center;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  overflow: auto;
+  display: table;
+
+  background: -webkit-linear-gradient(left, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Safari */
+  background: -o-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #E0E0E0 , #FFFFFF, #E0E0E0); /* Standard syntax */
+}
+
+.term p{
+  display:table-cell;
+  vertical-align:middle;
+  font-size: 5rem;
+}
+
+.definition p{
+  display:table-cell;
+  vertical-align:middle;
+  font-size:2rem;
+  padding:0 30px;
+}
+
+.controls{
+  height: 10%;
+  width: 80%;
+  margin: 0 auto;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  background-color: #C6DFF7;
+
+  box-shadow: inset 1px 4px 9px -6px; 
+
+  background: -webkit-linear-gradient(left, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Safari */
+  background: -o-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #C6DFF7 , #FFFFFF, #C6DFF7); /* Standard syntax */
+}
+
+a{
+  text-decoration: none;
+}
+
+.reveal, .confirm{
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.reveal a{
+  display: inline-block;
+  text-align: center;
+  font-size: 1.7rem;
+  padding:25px 30%;
+  margin:0;
+  color: #3779AC;
+}
+
+.confirm a{
+  display: inline-block;
+  height: 30px;
+  padding: 5px 50px 0 50px;
+  margin: 20px 60px;
+  background: #B8E4F0;
+  border: 2px solid #3779AC;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3779AC;
+}
+
+.known{
+  float: left;
+}
+
+.unknown{
+  float: right;
+}
+
+/* thanks to http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+@media only screen 
+and (max-width : 320px) {
+  .container{
+    width:100%;
+    height:768px;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  .controls{
+    width:100%;
+  }
+
+  confirm a{
+    margin: 20px 0;
+    padding:5px 0 0 0;
+  }
+}
+
+/* LOG IN PAGE BEGIN */
+
+.logIn {
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#75bbce), to(#63a4bc));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #75bbce, #63a4bc);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #75bbce, #63a4bc);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #75bbce, #63a4bc);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+
+}

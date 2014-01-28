@@ -4,11 +4,11 @@
 }
 
 body, html{
-  width:100%;
-  height:100%;
-  min-width:320px;
-  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  display: block;
 }
+
+.page { left: 0; right: 0; top: 0; bottom: 0; }
 
 .flashCards {
   background: -webkit-linear-gradient(top, #c0c0c0, #ffffff);
@@ -20,42 +20,19 @@ body, html{
   font-style:italic;
 }
 
-.container{
-  width:100%;
-  height:100%;
-  padding: 0;
-  margin: 0 auto;
-  overflow: hidden;
+.row{
+  overflow: hidden; 
+  position: absolute;
+  left: 0; 
+  right: 0;
 }
 
-.header {
+.header.row {
   background-color: #2691a3;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-  padding: 0;
+  height: 5rem;
 }
 
-.title{
-  background-color: #4c4c4c;
-  color: #FFF;
-  width: 10%;
-  height: 100%;
-  font-size: 5rem;
-  display: inline-block;
-}
-
-.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  
-  border-left: 30px solid white;
-  margin: 7px auto 0 auto;
-}
-
-.card {
+.card.row {
   background-color: #FFF;
   background: -webkit-linear-gradient(left, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Safari */
   background: -o-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Opera 11.1 to 12.0 */
@@ -66,11 +43,50 @@ body, html{
   border-width: 1px;
   border-color: #aaa;
 
-  width: 100%;
-  height: 80%;
-  margin:0;
+  top:5rem;
+  bottom:5rem;
+  padding:1rem;
   text-align: center;
-  overflow: auto;
+  overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
+}
+
+.footer.row{
+  background-color: #C6DFF7;
+  background: -webkit-linear-gradient(left, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Safari */
+  background: -o-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #C6DFF7 , #FFFFFF, #C6DFF7); /* Standard syntax */
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  box-shadow: inset 1px 4px 9px -6px; 
+
+  height: 5rem;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+/*.header, .footer { padding: 0 1em; }*/
+
+.title{
+  background-color: #4c4c4c;
+  color: #FFF;
+  width: 10%;
+  height: 100%;
+  display: inline-block;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  
+  border-left: 2rem solid white;
+  margin: .5rem auto 0 auto;
 }
 
 .term p{
@@ -85,25 +101,6 @@ body, html{
   height:100%;
 }
 
-.controls{
-  height: 10%;
-  width: 100%;
-  margin: 0 auto;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #aaa;
-  background-color: #C6DFF7;
-
-  box-shadow: inset 1px 4px 9px -6px; 
-
-  background: -webkit-linear-gradient(left, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Safari */
-  background: -o-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #C6DFF7 , #FFFFFF, #C6DFF7); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #C6DFF7 , #FFFFFF, #C6DFF7); /* Standard syntax */
-}
-
 a{
   text-decoration: none;
 }
@@ -111,14 +108,14 @@ a{
 .reveal, .confirm{
   text-align: center;
   margin: 0 auto;
-  height: 100%;
 }
 
 .reveal a{
   display: inline-block;
   text-align: center;
-  font-size: 1.7rem;
-  padding:25px 30%;
+  font-size: 2rem;
+  padding-top:1.5rem;
+  width: 100%;
   margin:0;
   color: #3779AC;
 }
@@ -127,41 +124,27 @@ a{
   display: inline-block;
   height: 100%;
   width:50%;
-  padding: 1% 0 0 0;
+  padding-top:1.5rem;
   margin: 0;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #3779AC;
 }
 
 .known{
   float: left;
-  background: rgba(255, 255, 255, .7)
 }
 
 .unknown{
   float: right;
-  background: rgba(0, 0, 0, .7)
 }
 
 /* thanks to http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
 
 @media only screen 
 and (max-width : 320px) {
-  .container{
-    height:420px;
-  }
-
-  .card{
-    height:336px;
-  }
-
-  .controls{
-  }
-
-  confirm a{
-    margin: 20px 0;
-    padding:5px 0 0 0;
+  html{
+    font-size: 8px;
   }
 }
 

@@ -30,6 +30,21 @@ body, html{
 .header.row {
   background-color: #2691a3;
   height: 5rem;
+  display:block;
+}
+
+.deckList.row{
+  top:5rem;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.deck{
+  background-color: #50A6BA;
+  height: 5rem;
+  display: block;
+  margin-bottom: 2px;
 }
 
 .card.row {
@@ -86,15 +101,23 @@ body, html{
 
 /*.header, .footer { padding: 0 1em; }*/
 
-.title{
-  background-color: #4c4c4c;
-  color: #FFF;
-  width: 10%;
+.icon{
+  width: 5rem;
   height: 100%;
   display: inline-block;
+  float:left;
 }
 
-.arrow-right {
+.header .icon{
+  background-color: #4c4c4c;
+  color: #FFF;
+}
+
+.deck .icon{
+  background-color: #88C3D0;
+}
+
+.arrow-right{
   width: 0; 
   height: 0; 
   border-top: 2rem solid transparent;
@@ -102,6 +125,53 @@ body, html{
   
   border-left: 2rem solid white;
   margin: .5rem auto 0 auto;
+}
+
+.circle{
+  background-color: #FFF;
+  background-position: 30% 40%;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(radial, 30% 40%, 0, 30% 80%, 100, from(#FFF), to(#aaa));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(30% 40%, closest-corner, #FFF, #aaa);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(30% 40%, closest-corner, #FFF, #aaa);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(30% 40%, closest-corner, #FFF, #aaa);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem; 
+  margin:1rem;
+}
+
+.title{
+  display: inline-block;
+  margin: 0;
+}
+
+h1{
+  color: #FFF;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  font-size:2rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-style:normal;
+  font-weight: 600;
+}
+
+h2{
+  color:#FFF;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  font-size:2rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-style:normal;
+  font-weight: 300;
 }
 
 .term p{

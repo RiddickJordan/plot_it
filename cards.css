@@ -43,12 +43,27 @@ body, html{
   border-width: 1px;
   border-color: #aaa;
 
+  overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
+
   top:5rem;
   bottom:5rem;
   padding:1rem;
   text-align: center;
-  overflow-y: auto; 
-  -webkit-overflow-scrolling: touch;
+  font-size: 0em;
+}
+
+.card.row:before{
+  content: '';
+  display:inline-block;
+  height:100%;
+  vertical-align: middle;
+}
+
+.centered{
+  display: inline-block;
+  vertical-align: middle;
+  width:95%;
 }
 
 .footer.row{
@@ -144,7 +159,7 @@ a{
 @media only screen 
 and (max-width : 320px) {
   html{
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 

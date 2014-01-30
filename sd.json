@@ -1,0 +1,260 @@
+{
+   "file_version":"0.1",
+   "decks":{
+      "1":{
+         "name":"ShuffleDeck Prototype Glaucoma",
+         "author":"CP",
+         "release_date":"2011-07-14T19:43:37+0100",
+         "catagory":"uncatorgized",
+         "description":"This is test deck 1",
+         "copyright":" &copy; 2013 Creative Perspectives, inc.",
+         "cardCount":16,
+         "cards":[
+            {
+               "id":"1",
+               "topic":"Glaucoma Basics",
+               "difficulty":"0",
+               "q":{
+                  "text":"Ocular pressure is maintained through the production and outflow of aqueous humor - which happens at the front of the eye. It is produced by the ciliary body and flows from the posterior chamber of the eye into the anterior chamber. A build up of aqueous ",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"While glaucoma can appear even with normal ocular pressure, the most common event is that the ocular pressure increases when there&rsquo;s a blockage at the site of drainage which is at the front of the eye. While the blockage happens at the front, the bu",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"2",
+               "topic":"Diagnosing Glaucoma",
+               "difficulty":"0",
+               "q":{
+                  "text":"True or false? Intraocular pressure is tested with an instrument called an ophthalmoscope.",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"False. The instrument used to test ocular pressure is a tonometer.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"3",
+               "topic":"Glaucoma Basics",
+               "difficulty":"0",
+               "q":{
+                  "text":"Specialists define normal ocular pressure as a reading between&#8230;",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"&#8230;10 mmHg and 20 mmHg",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"4",
+               "topic":"Ocular Anatomy",
+               "difficulty":"0",
+               "q":{
+                  "text":"From the surface of the eyes, tears flow into the&#8230;",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"&#8230;punctum. The punctum is a small opening located on the nasal side of the eye on each of the eyelids.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"5",
+               "topic":"Ocular Anatomy",
+               "difficulty":"0",
+               "q":{
+                  "text":"From outermost to innermost, the layers of the tear film are:",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"Lipid Layer, Aqueous\/Mucin Gel, Corneal Epithelium",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"6",
+               "topic":"Ocular Anatomy",
+               "difficulty":"0",
+               "q":{
+                  "text":"The muscle that moves the eye inward towards the nose (or, abduction) is:",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"The lateral rectus.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"7",
+               "topic":"Treating Glaucoma",
+               "difficulty":"0",
+               "q":{
+                  "text":"According to a study in 2000 by Nelson, et al, what percentage of dry eye patients use lubricant eye drops to treat their symptoms?",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"56",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"8",
+               "topic":"Ocular Anatomy",
+               "difficulty":"0",
+               "q":{
+                  "text":"Which of these structures is not part of the Fibrous Tunic? Sclera, Iris, Retina, Limbus.",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"Iris and Retina. The Cornea is also part of the Fibrous Tunic.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"9",
+               "topic":"Glaucoma Basics",
+               "difficulty":"0",
+               "q":{
+                  "text":"Which of these groups is at risk for developing open-angle glaucoma? People older than 60, African-Americans, People with a family history of glaucoma.",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"All three groups.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"10",
+               "topic":"Glaucoma Basics",
+               "difficulty":"0",
+               "q":{
+                  "text":"True or false? Unlike most other ocular diseases, which affect either the front or the back of the eye, glaucoma affects both the anterior and posterior segments of the eye.",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"True",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"11",
+               "topic":"Glaucoma Basics",
+               "difficulty":"0",
+               "q":{
+                  "text":"The most common form of glaucoma is called open-angle glaucoma. What does &ldquo;open-angle&rdquo; refer to?",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"The area of the eye where ocular fluid drains.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"12",
+               "topic":"vocabulary",
+               "difficulty":"0",
+               "q":{
+                  "text":"Define &ldquo;Intraocular Pressure&rdquo;.",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"Intraocular pressure is the pressure exerted by the fluids inside the eyeball; regulated by resistance to the outward flow of aqueous humor.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"13",
+               "topic":"vocabulary",
+               "difficulty":"0",
+               "q":{
+                  "text":"What is the &ldquo;Aqueous Humor&rdquo;?",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"The aqueous humor is the clear, lucid fluid within the eyeball between the cornea and the lens. Aqueous humor is produced by the ciliary body.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"14",
+               "topic":"vocabulary",
+               "difficulty":"0",
+               "q":{
+                  "text":"What is the &ldquo;Ciliary Body&rdquo;?",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"The ciliary body is the part of the tunic of the eye between the choroid coat and the iris. The ciliary body produces aqueous humor.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"15",
+               "topic":"vocabulary",
+               "difficulty":"0",
+               "q":{
+                  "text":"Define &ldquo;Tonometry&rdquo;",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"Tonometry is the measurement of intraocular pressure by determining the amount of force needed to make a slight indentation in the cornea.",
+                  "image":"",
+                  "audio":""
+               }
+            },
+            {
+               "id":"16",
+               "topic":"vocabulary",
+               "difficulty":"0",
+               "q":{
+                  "text":"Define &ldquo;Perimetry&rdquo;",
+                  "image":"",
+                  "audio":""
+               },
+               "a":{
+                  "text":"Also called a visual field test, perimetry measures the extent and distribution of the field of vision. The test may be done by a number of methods including: confrontation, tangent screen exam and automated perimetry.",
+                  "image":"",
+                  "audio":""
+               }
+            }
+         ]
+      }
+   },
+   "usage":[
+
+   ],
+   "processing_time":0.370126962662
+}

@@ -224,15 +224,6 @@ a{
 }
 
 /* ~~~~~~~~~~ TITLE ~~~~~~~~~~ */
-.appName.row{
-  background-color: #50A6BA;
-  text-align: right;
-  color: #000;
-  top:0;
-  bottom:50%;
-  padding: 5rem 5rem 0 0;
-}
-
 .deckName.row{
   background-position: 30% 30%;
   background-repeat: no-repeat;
@@ -241,8 +232,8 @@ a{
   background: -moz-radial-gradient(30% 60%, closest-corner, #88C3D0, #50A6BA);
   background: -ms-radial-gradient(30% 60%, closest-corner, #88C3D0, #50A6BA);
   display: block;
-  padding-left: 5rem;
-  top:50%;
+  padding: 5rem;
+  top:0;
   bottom:5rem;
 }
 

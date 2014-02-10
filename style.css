@@ -11,7 +11,7 @@ body, html{
 body{
   background-repeat: no-repeat;
   font-family: Georgia, serif;
-  font-style:italic;
+  font-style:normal;
 }
 
 h1, h2, h3, h4, h5{
@@ -131,7 +131,7 @@ a{
 }
 
 /* ~~~~~~~~~~ CARDS ~~~~~~~~~~ */
-.card.row {
+.canvas_container.row {
   background-color: #FFF;
   background: -webkit-linear-gradient(left, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Safari */
   background: -o-linear-gradient(right, #E0E0E0 , #FFFFFF, #E0E0E0); /* For Opera 11.1 to 12.0 */
@@ -142,21 +142,11 @@ a{
   border-width: 1px;
   border-color: #aaa;
 
-  overflow-y: auto; 
+  overflow: auto; 
   -webkit-overflow-scrolling: touch;
 
   top:5rem;
   bottom:5rem;
-  padding:1rem;
-  text-align: center;
-  font-size: 0em;
-}
-
-.card.row:before{
-  content: '';
-  display:inline-block;
-  height:100%;
-  vertical-align: middle;
 }
 
 .footer.row{
@@ -177,51 +167,12 @@ a{
   margin: 0 auto;
 }
 
-.term p{
-  vertical-align:middle;
-  font-size: 5rem;
+
+#canvas_1{
+  /*width:99%;
+  height:99%;*/
 }
 
-.definition p{
-  vertical-align:middle;
-  font-size:2rem;
-  padding:0 30px;
-  height:100%;
-}
-
-.reveal, .confirm{
-  text-align: center;
-  margin: 0 auto;
-}
-
-.reveal a{
-  display: inline-block;
-  text-align: center;
-  font-size: 2rem;
-  padding-top:1.5rem;
-  width: 100%;
-  margin:0;
-  color: #3779AC;
-}
-
-.confirm a{
-  display: inline-block;
-  height: 100%;
-  width:50%;
-  padding-top:1.5rem;
-  margin: 0;
-  text-align: center;
-  font-size: 2rem;
-  color: #3779AC;
-}
-
-.known{
-  float: left;
-}
-
-.unknown{
-  float: right;
-}
 
 /* ~~~~~~~~~~ TITLE ~~~~~~~~~~ */
 .deckName.row{
